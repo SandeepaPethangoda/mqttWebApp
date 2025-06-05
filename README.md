@@ -1,62 +1,78 @@
-# MQTT WebApp 🚀
+📡 MQTT WebApp
+A responsive web application built with HTML, Bootstrap, Font Awesome, and MQTT.js to allow users to authenticate and control MQTT-enabled devices over the internet (e.g., ESP-01 with a relay).
 
-## Overview 🌐
-MQTT WebApp is a lightweight and efficient web application designed to interact with MQTT brokers. It allows users to publish and subscribe to topics, making it ideal for IoT and real-time messaging applications.
+🚀 Features
+🔐 Login interface (basic UI-level authentication)
 
-## Features ✨
-- 🔗 Connect to any MQTT broker.
-- 📨 Publish messages to specific topics.
-- 📡 Subscribe and listen to topics in real-time.
-- 🖥️ User-friendly web interface.
+🔗 MQTT Broker connectivity
 
-## Prerequisites 📋
-- 🟢 Node.js (v14 or later)
-- 📦 npm (Node Package Manager)
-- 🌐 An MQTT broker (e.g., Mosquitto, HiveMQ)
+📤 Publish messages to any topic
 
-## Installation ⚙️
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/mqtt-webapp.git
-    cd mqtt-webapp
-    ```
+🧾 Track request history
 
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
+🎨 Stylish UI with Bootstrap 5 and Font Awesome
 
-3. Start the application:
-    ```bash
-    npm start
-    ```
+🌐 Uses public MQTT broker test.mosquitto.org for demo/testing
 
-4. Open your browser and navigate to:
-    ```
-    http://localhost:3000
-    ```
+📁 Project Structure
+graphql
+Copy
+Edit
+/
+├── index.html            # Main HTML interface
+├── css/
+│   └── index.css         # Custom styles
+├── js/
+│   └── index.script.js   # MQTT logic and UI interactions
+└── README.md             # You're here!
+🔧 Setup Instructions
+Clone this repo
 
-## Configuration 🛠️
-Update the MQTT broker settings in the `config.json` file:
-```json
-{
-  "brokerUrl": "mqtt://your-broker-url",
-  "port": 1883,
-  "username": "your-username",
-  "password": "your-password"
-}
-```
+bash
+Copy
+Edit
+git clone https://github.com/SandeepaPethangoda/mqttWebApp.git
+cd mqtt-webapp
+Open index.html in your browser
 
-## Usage 📖
-1. 🔌 Connect to the MQTT broker using the web interface.
-2. 📨 Publish messages to desired topics.
-3. 📡 Subscribe to topics to receive real-time updates.
+No local server needed – pure HTML/CSS/JS frontend
 
-## Contributing 🤝
-Contributions are welcome! Please fork the repository and submit a pull request.
+Login with any username/password (no backend check — UI only)
 
-## License 📜
-This project is licensed under the [MIT License](LICENSE).
+Connect to MQTT
 
-## Contact 📧
-For questions or support, please contact [your-email@example.com].
+Default broker: ws://test.mosquitto.org:8080
+
+Enter client ID (can be anything unique)
+
+Click Connect
+
+Send MQTT Messages
+
+Enter Topic (e.g., relay/control)
+
+Enter Message (e.g., ON or OFF)
+
+Choose QoS, Retain settings
+
+Click Send
+
+Control your ESP-01 Relay
+
+If your ESP-01 listens to relay/control, it will respond accordingly!
+
+🧠 ESP-01 MQTT Example
+cpp
+Copy
+Edit
+// Topic: relay/control
+// Payload: ON / OFF
+See ESP-01 MQTT Relay Code for reference (add your own link if hosted).
+
+🛠 Dependencies
+Bootstrap 5
+
+Font Awesome 6
+
+
+
