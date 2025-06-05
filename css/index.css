@@ -1,0 +1,94 @@
+
+:root {
+    --primary-blue: #1e3a8a;
+    --secondary-blue: #3b82f6;
+    --dark-blue: #1e293b;
+    --light-blue: #dbeafe;
+}
+
+body {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    padding: 3rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.app-container {
+    background: white;
+    border-radius: 15px;
+    margin: 2rem;
+    min-height: calc(100vh - 4rem);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.navbar-custom {
+    background: var(--primary-blue) !important;
+    border-radius: 15px 15px 0 0;
+}
+
+.btn-primary {
+    background: var(--secondary-blue);
+    border-color: var(--secondary-blue);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+    transform: translateY(-2px);
+}
+
+.form-control:focus {
+    border-color: var(--secondary-blue);
+    box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.status-connected {
+    color: #10b981;
+}
+
+.status-disconnected {
+    color: #ef4444;
+}
+
+.request-item {
+    background: var(--light-blue);
+    border-left: 4px solid var(--secondary-blue);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
