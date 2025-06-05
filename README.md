@@ -1,7 +1,7 @@
-📡 MQTT WebApp
+#📡 MQTT WebApp
 A responsive web application built with HTML, Bootstrap, Font Awesome, and MQTT.js to allow users to authenticate and control MQTT-enabled devices over the internet (e.g., ESP-01 with a relay).
 
-🚀 Features
+##🚀 Features
 🔐 Login interface (basic UI-level authentication)
 
 🔗 MQTT Broker connectivity
@@ -14,7 +14,7 @@ A responsive web application built with HTML, Bootstrap, Font Awesome, and MQTT.
 
 🌐 Uses public MQTT broker test.mosquitto.org for demo/testing
 
-📁 Project Structure
+##📁 Project Structure
 graphql
 Copy
 Edit
