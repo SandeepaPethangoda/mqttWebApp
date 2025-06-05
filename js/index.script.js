@@ -69,7 +69,7 @@ function loadConnectionSettings() {
         const settings = userSettings.connectionSettings;
         document.getElementById('brokerUrl').value = settings.brokerUrl || 'ws://test.mosquitto.org:8080';
         document.getElementById('clientId').value = settings.clientId || ('client-' + Math.random().toString(36).substr(2, 9));
-        document.getElementById('topic').value = settings.defaultTopic || '';
+        document.getElementById('topic').value = settings.defaultTopic || 'relay/control';
         document.getElementById('qos').value = settings.defaultQos || '0';
         document.getElementById('retain').value = settings.defaultRetain || 'false';
     }
